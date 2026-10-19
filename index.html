@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Middle TN Auto Repair | Mobile mechanics in Spring Hill, Columbia, Thompson's Station &amp; Franklin</title>
-  <meta name="description" content="Father-and-son mobile mechanics. We come to your driveway for brakes, starters, alternators, spark plugs and coils, suspension, sensors and cooling repairs. By appointment only. Text 931-674-1516.">
+  <title>Mobile Mechanic in Spring Hill &amp; Columbia, TN | Middle TN Auto Repair</title>
+  <meta name="description" content="Father-and-son mobile mechanics serving Spring Hill, Columbia, Thompson's Station and Franklin. Brakes, starters, plugs and more, fixed in your driveway.">
   <link rel="canonical" href="https://middletnautorepair.com/">
   <meta name="theme-color" content="#2E6DA1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Middle TN Auto Repair">
-  <meta property="og:description" content="Father-and-son mobile mechanics serving Spring Hill, Thompson's Station, Columbia and Franklin. Text 931-674-1516.">
+  <meta property="og:site_name" content="Middle TN Auto Repair">
+  <meta property="og:title" content="Mobile mechanic in Spring Hill, Columbia, Thompson's Station &amp; Franklin">
+  <meta property="og:description" content="Father-and-son mobile mechanics. We fix your car in your driveway. Text 931-674-1516.">
   <meta property="og:url" content="https://middletnautorepair.com/">
   <meta property="og:image" content="https://middletnautorepair.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ed and his son Zack next to a car they're repairing">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
   <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 
@@ -24,20 +28,41 @@
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
+    "@id": "https://middletnautorepair.com/#business",
     "name": "Middle TN Auto Repair",
+    "legalName": "Middle TN Auto Repair LLC",
     "url": "https://middletnautorepair.com/",
     "logo": "https://middletnautorepair.com/assets/logo.png",
     "image": "https://middletnautorepair.com/assets/og-image.jpg",
     "telephone": "+1-931-674-1516",
     "email": "info@MiddleTNAutoRepair.com",
-    "description": "Father-and-son mobile mechanics. By appointment only.",
+    "description": "Father-and-son mobile mechanics. We fix cars in your driveway, by appointment only.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Spring Hill",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
     "areaServed": [
       {"@type": "City", "name": "Spring Hill, TN"},
       {"@type": "City", "name": "Thompson's Station, TN"},
       {"@type": "City", "name": "Columbia, TN"},
       {"@type": "City", "name": "Franklin, TN"}
     ],
-    "sameAs": ["https://www.facebook.com/MiddleTNAutoRepair"]
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Check, Venmo, Google Pay, Apple Pay, Online payment",
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brake repair: pads, rotors and calipers"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spark plug and ignition coil replacement"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Starter, alternator and battery replacement"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Suspension and steering repair"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sensor replacement and check engine light diagnosis"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Radiator, water pump and cooling leak repair"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window regulator replacement"}}
+    ],
+    "sameAs": [
+      "https://www.facebook.com/MiddleTNAutoRepair",
+      "https://www.google.com/maps?cid=16669681871778655004"
+    ]
   }
   </script>
 </head>
@@ -47,17 +72,18 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Middle TN Auto Repair, back to top">
-        <img src="assets/logo.webp" alt="Middle TN Auto Repair" width="693" height="365">
+        <img src="assets/logo.webp" alt="Middle TN Auto Repair" width="320" height="169">
       </a>
       <nav aria-label="Main">
         <ul class="nav">
           <li><a href="#fix">What we fix</a></li>
           <li><a href="#booking">How booking works</a></li>
           <li><a href="#about">About us</a></li>
+          <li><a href="#questions">Questions</a></li>
           <li><a href="#reviews">Reviews</a></li>
         </ul>
       </nav>
-      <a class="btn btn-small" href="sms:+19316741516">Text 931-674-1516</a>
+      <a class="btn btn-small js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)">Text 931-674-1516</a>
     </div>
   </header>
 
@@ -66,20 +92,21 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <h1>Car trouble? Text&nbsp;us. We&nbsp;come&nbsp;to&nbsp;you.</h1>
-          <p class="lede">We're a father-and-son team of mobile mechanics. We fix your car in your driveway, so there's no tow, no drop-off and no waiting room.</p>
+          <p class="lede">We're a father-and-son team of mobile mechanics serving Spring Hill, Columbia, Thompson's Station and Franklin. We fix your car in your driveway, so there's no tow, no drop-off and no waiting room.</p>
           <div class="actions">
-            <a class="btn" href="sms:+19316741516">Text 931-674-1516</a>
+            <a class="btn js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)">Text 931-674-1516</a>
             <a class="btn btn-quiet" href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a>
           </div>
-          <p class="area">Serving Spring Hill, Thompson's Station, Columbia and Franklin. By appointment only.</p>
+          <p class="desktop-note">On a computer? Text 931-674-1516 from your phone.</p>
+          <p class="area">Rather call? <a href="tel:+19316741516">931-674-1516</a>. By appointment only.</p>
         </div>
 
         <figure class="hero-media">
-          <img src="assets/photos/ed-zack-van.webp" alt="Ed and his son Zack standing in front of a customer's van with the hood up" width="764" height="573">
-          <div class="thread" aria-label="Example of a text to send us">
-            <p class="thread-label">What to text us</p>
-            <p class="bubble bubble-in">2012 Honda Odyssey. Grinding noise when I brake. I'm in Spring Hill.</p>
-            <p class="bubble bubble-out">Thanks! Send us the VIN and mileage and we'll get you a written estimate.</p>
+          <img src="assets/photos/ed-zack-van.webp" alt="Ed and his son Zack in front of a van with the hood up" width="764" height="503" fetchpriority="high">
+          <div class="thread" role="group" aria-label="Example of a text to send us">
+            <p class="thread-label" aria-hidden="true">What to text us</p>
+            <p class="bubble bubble-in"><span class="sr-only">You: </span>2012 Honda Odyssey. Grinding noise when I brake. I'm in Spring Hill.</p>
+            <p class="bubble bubble-out"><span class="sr-only">Us: </span>Thanks! We'll text back what we need for your written estimate.</p>
           </div>
         </figure>
       </div>
@@ -87,7 +114,7 @@
 
     <section class="fix" id="fix" aria-labelledby="fix-title">
       <div class="wrap">
-        <h2 id="fix-title">What we fix in your driveway</h2>
+        <h2 id="fix-title">Brakes, starters and more, fixed in your driveway</h2>
         <p class="section-lede">We'd rather be upfront about what we don't do, so nobody wastes their time.</p>
         <div class="ticket">
           <div class="ticket-col ticket-yes">
@@ -130,7 +157,7 @@
           </li>
           <li>
             <h3>Send a few details</h3>
-            <p>For a written estimate we'll ask for your full name, address, phone, email, VIN and mileage. The VIN lets us order the exact right part.</p>
+            <p>Your written estimate needs your full name, address, phone, email, VIN and mileage. The VIN gets the exact right part, and the address tells us how far we're driving.</p>
           </li>
           <li>
             <h3>Approve your estimate</h3>
@@ -138,7 +165,7 @@
           </li>
           <li>
             <h3>Pick a time</h3>
-            <p>We book a time that works for both of us. We're by appointment only.</p>
+            <p>We usually book one to two weeks out. We're by appointment only.</p>
           </li>
           <li>
             <h3>We fix it where it's parked</h3>
@@ -152,18 +179,22 @@
       <div class="wrap about-inner">
         <div class="about-copy">
           <h2 id="about-title">A father and son who fix cars</h2>
-          <p>I'm Ed, and that's my son Zack. He's been with me on most of our jobs: brakes, plugs and coils, a radiator on a 19-degree morning, window regulators held up with suction cups. More and more, he's the one taking the old parts off and putting the new ones on while I check his work.</p>
+          <p>I'm Ed, and that's my son Zack. Zack helps on most of our jobs, and I do or check every repair myself.</p>
           <p>Middle TN Auto Repair has been a mobile business since day one. We bring the shop to you: organized drawers of hand tools, electric impact tools, testing gear and a dealer-level scan tool that talks to most modern vehicles. Fewer runs to the parts store means your car is back together sooner.</p>
           <p>We tell you straight what your car needs and what it doesn't. Sometimes that means telling you the quote you already have is fair.</p>
+          <figure class="photo about-wide">
+            <img src="assets/photos/tool-drawer.webp" alt="An organized drawer of pliers, wrenches and wire brushes" width="764" height="572" loading="lazy">
+            <figcaption>One of the drawers we bring to every job.</figcaption>
+          </figure>
         </div>
         <div class="about-media">
-          <figure class="photo photo-tall">
+          <figure class="photo">
             <img src="assets/photos/zack-brakes.webp" alt="Zack working on a front brake assembly with the wheel off" width="764" height="572" loading="lazy">
             <figcaption>Zack on a brake and suspension job.</figcaption>
           </figure>
           <figure class="photo">
-            <img src="assets/photos/tool-drawer.webp" alt="An organized drawer of pliers, wrenches and wire brushes" width="764" height="572" loading="lazy">
-            <figcaption>One of the drawers we bring to every job.</figcaption>
+            <img src="assets/photos/ed-zack-eclipse.webp" alt="Ed and Zack smiling next to a car with a front wheel off" width="764" height="572" loading="lazy">
+            <figcaption>Another brake job wrapped up.</figcaption>
           </figure>
         </div>
       </div>
@@ -181,44 +212,87 @@
             <img src="assets/photos/starter-old-new.webp" alt="A new starter next to the worn original" width="653" height="868" loading="lazy">
             <figcaption>Out with the old starter, in with the new.</figcaption>
           </figure>
-          <figure class="photo">
-            <img src="assets/photos/ed-zack-eclipse.webp" alt="Ed and Zack smiling next to a car with a front wheel off" width="764" height="572" loading="lazy">
-            <figcaption>Another brake job wrapped up.</figcaption>
-          </figure>
         </div>
         <p class="work-more">See every job on our <a href="https://www.facebook.com/MiddleTNAutoRepair">Facebook page</a>.</p>
+      </div>
+    </section>
+
+    <section class="faq" id="questions" aria-labelledby="questions-title">
+      <div class="wrap faq-inner">
+        <div class="faq-side">
+          <h2 id="questions-title">Questions people ask us</h2>
+          <p>Don't see yours? <a class="js-text" href="sms:+19316741516">Text us</a> and we'll answer.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Do I need to be home?</summary>
+            <p>No. As long as we can get to the car and the keys, you don't need to be there. If we find anything else along the way, we'll text you and you decide.</p>
+          </details>
+          <details>
+            <summary>How soon can you come out?</summary>
+            <p>We usually book one to two weeks out. We're by appointment only, so we can't take same-day or emergency calls.</p>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <p>Cash, card, check, Venmo, Google Pay, Apple Pay, or pay online from your invoice.</p>
+          </details>
+          <details>
+            <summary>Can I buy my own parts?</summary>
+            <p>Yes, we're happy to install parts you supply. Match them to your VIN when you order so the job doesn't stall on the wrong part. Parts you supply are installed at your own risk, as your written estimate explains.</p>
+          </details>
+          <details>
+            <summary>Where can you work on my car?</summary>
+            <p>Most driveways work fine. Some apartment complexes and HOAs don't allow car repairs, so check your rules first. If you're not sure, text us and we'll figure it out together.</p>
+          </details>
+          <details>
+            <summary>Do you come to my town?</summary>
+            <p>We serve Spring Hill, Thompson's Station, Columbia and Franklin. Nearby? Text us your town and we'll let you know.</p>
+          </details>
+          <details>
+            <summary>What if I need to reschedule?</summary>
+            <p>Just text us at least 24 hours ahead and we'll find a new time at no charge.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <section class="reviews" id="reviews" aria-labelledby="reviews-title">
       <div class="wrap reviews-inner">
         <div>
-          <h2 id="reviews-title">Five-star reviews from local families</h2>
-          <p>Read what our customers say on Google and Facebook. Worked with us already? A quick review helps other families find us.</p>
+          <h2 id="reviews-title">What local families say</h2>
+          <blockquote class="quote">
+            <p>"Ed and Zach were awesome! Very responsive and got me in right away for a much needed repair. Their prices are reasonable and they did great work!"</p>
+            <footer>Facebook review</footer>
+          </blockquote>
         </div>
         <div class="review-links">
-          <a class="review-link" href="https://g.page/r/CRyrIrZXm1bnEAE/review">
-            <span class="review-site">Google</span>
-            <span class="review-action">Read or leave a review</span>
-          </a>
-          <a class="review-link" href="https://www.facebook.com/MiddleTNAutoRepair/reviews">
-            <span class="review-site">Facebook</span>
-            <span class="review-action">Read or leave a review</span>
-          </a>
+          <div class="review-card">
+            <p class="review-score">5.0 on Google</p>
+            <p class="review-count">11 reviews</p>
+            <p class="review-actions"><a href="https://www.google.com/maps?cid=16669681871778655004">Read reviews</a> <a href="https://g.page/r/CRyrIrZXm1bnEAE/review">Leave a review</a></p>
+          </div>
+          <div class="review-card">
+            <p class="review-score">100% recommend on Facebook</p>
+            <p class="review-count">17 reviews</p>
+            <p class="review-actions"><a href="https://www.facebook.com/MiddleTNAutoRepair/reviews">Read or leave a review</a></p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap contact-inner">
-        <h2 id="contact-title">Ready when you are</h2>
-        <p class="contact-number"><a href="sms:+19316741516">931-674-1516</a></p>
-        <p>Text is the fastest way to reach us. Include the year, make and model and what's going on.</p>
+        <div>
+          <h2 id="contact-title">Ready when you are</h2>
+          <p class="contact-number"><a class="js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)">931-674-1516</a></p>
+          <p>Text is the fastest way to reach us. Include the year, make and model and what's going on.</p>
+        </div>
         <ul class="contact-list">
-          <li><a href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a></li>
-          <li><a href="mailto:info@MiddleTNAutoRepair.com">info@MiddleTNAutoRepair.com</a></li>
+          <li><a class="btn btn-light" href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a></li>
+          <li><a class="btn btn-outline-light" href="tel:+19316741516">Call 931-674-1516</a></li>
+          <li><a class="contact-email" href="mailto:info@MiddleTNAutoRepair.com">info@MiddleTNAutoRepair.com</a></li>
+          <li class="area">Serving Spring Hill, Thompson's Station, Columbia and Franklin. By appointment only.</li>
         </ul>
-        <p class="area">Serving Spring Hill, Thompson's Station, Columbia and Franklin. By appointment only.</p>
       </div>
     </section>
   </main>
