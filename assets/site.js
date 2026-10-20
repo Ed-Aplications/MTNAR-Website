@@ -96,6 +96,30 @@
     });
   }
 
+  // Light/dark toggle. Follows the phone or computer setting until the
+  // visitor picks one; their pick is remembered on that device.
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    var root = document.documentElement;
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    var current = function () {
+      var t = root.getAttribute('data-theme');
+      return t === 'dark' || t === 'light' ? t : (mq && mq.matches ? 'dark' : 'light');
+    };
+    var label = function () {
+      toggle.setAttribute('aria-label', current() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    };
+    toggle.hidden = false;
+    label();
+    toggle.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('mt_theme', next); } catch (e) { /* not remembered, still switches */ }
+      label();
+    });
+    if (mq && mq.addEventListener) mq.addEventListener('change', label);
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();

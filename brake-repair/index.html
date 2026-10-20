@@ -6,7 +6,8 @@
   <title>Mobile Brake Repair in Spring Hill &amp; Columbia, TN | Middle TN Auto Repair</title>
   <meta name="description" content="Brake pads, rotors and calipers replaced in your driveway in Spring Hill, Columbia, Thompson's Station and Franklin. Text 931-674-1516 for a written estimate.">
   <link rel="canonical" href="https://middletnautorepair.com/brake-repair/">
-  <meta name="theme-color" content="#2E6DA1">
+  <meta name="theme-color" content="#2E6DA1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11181D" media="(prefers-color-scheme: dark)">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Middle TN Auto Repair">
@@ -22,6 +23,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="preload" href="../assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>try{var t=localStorage.getItem('mt_theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="stylesheet" href="../styles.css">
 
   <script type="application/ld+json">
@@ -65,7 +67,8 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="../" aria-label="Middle TN Auto Repair home page">
-        <img src="../assets/logo.webp" alt="Middle TN Auto Repair" width="320" height="169">
+        <img class="logo-light" src="../assets/logo.webp" alt="Middle TN Auto Repair" width="320" height="169">
+        <img class="logo-dark" src="../assets/logo-dark.webp" alt="Middle TN Auto Repair" width="320" height="169">
       </a>
       <nav aria-label="Main">
         <ul class="nav">
@@ -76,6 +79,10 @@
           <li><a href="../#reviews">Reviews</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" hidden>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+      </button>
       <a class="btn btn-small js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)" data-body="Year/make/model: \nWhat&#x27;s going on (brakes): \nTown: \n">Text 931-674-1516</a>
     </div>
   </header>
