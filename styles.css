@@ -279,10 +279,11 @@ p { margin: 0 0 1em; }
 .reviews-inner {
   display: grid; gap: 2rem;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  align-items: center;
+  align-items: start;
 }
-.quote { margin: 1.5rem 0 0; padding-left: 1.25rem; border-left: 4px solid var(--blue); }
-.quote p { font-size: 1.3rem; line-height: 1.5; max-width: 34rem; margin-bottom: 0.5rem; }
+.quotes { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+.quote { margin: 0; padding-left: 1.25rem; border-left: 4px solid var(--blue); }
+.quote p { font-size: 1.2rem; line-height: 1.5; max-width: 34rem; margin-bottom: 0.35rem; }
 .quote footer { color: var(--steel); font-size: 1rem; }
 .review-links { display: grid; gap: 1rem; }
 .review-card {
