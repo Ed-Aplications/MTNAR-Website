@@ -97,6 +97,7 @@
             <a class="btn js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)">Text 931-674-1516</a>
             <a class="btn btn-quiet" href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a>
           </div>
+          <p class="proof"><a href="#reviews"><span aria-hidden="true">★ </span>5.0 on Google · 100% recommend on Facebook</a></p>
           <p class="desktop-note">On a computer? Text 931-674-1516 from your phone.</p>
           <p class="area">Rather call? <a href="tel:+19316741516">931-674-1516</a>. By appointment only.</p>
         </div>
@@ -120,14 +121,14 @@
           <div class="ticket-col ticket-yes">
             <h3>Yes, we do</h3>
             <ul>
-              <li>Brakes: pads, rotors and calipers</li>
-              <li>Spark plugs and ignition coils</li>
-              <li>Starters, alternators and batteries</li>
-              <li>Suspension and steering: struts, control arms, tie rods</li>
-              <li>Sensors and check engine lights</li>
-              <li>Radiators, water pumps and cooling leaks</li>
+              <li><a href="brake-repair/">Brakes: pads, rotors and calipers, done at your home</a></li>
+              <li><a href="spark-plugs-check-engine/">Spark plugs and ignition coils</a></li>
+              <li><a href="starter-alternator-battery/">Starters, alternators and batteries</a></li>
+              <li><a href="cooling-suspension/">Suspension and steering: struts, control arms, tie rods</a></li>
+              <li><a href="spark-plugs-check-engine/">Sensors and check engine lights</a></li>
+              <li><a href="cooling-suspension/">Radiators, water pumps and cooling leaks</a></li>
               <li>Window regulators</li>
-              <li>And plenty in between. Just ask.</li>
+              <li>Not listed? <a class="js-text" href="sms:+19316741516" data-body="Can you fix this? \n">Text us</a> and we'll tell you yes or no.</li>
             </ul>
           </div>
           <div class="ticket-col ticket-no">
@@ -153,11 +154,11 @@
         <ol class="steps">
           <li>
             <h3>Text us</h3>
-            <p>Send the year, make and model and what's going on to 931-674-1516, or message us on Facebook.</p>
+            <p>Send the year, make and model and what's going on to 931-674-1516, or message us on Facebook. The short form below can write the text for you.</p>
           </li>
           <li>
             <h3>Send a few details</h3>
-            <p>Your written estimate needs your full name, address, phone, email, VIN and mileage. The VIN gets the exact right part, and the address tells us how far we're driving.</p>
+            <p>Your written estimate needs your full name, address, phone, email, VIN and mileage. The VIN gets the exact right part, and the address tells us how far we're driving. We use these only for your estimate and invoice, never shared.</p>
           </li>
           <li>
             <h3>Approve your estimate</h3>
@@ -172,6 +173,58 @@
             <p>We come to your driveway, do the job and clean up. If we find something else, we tell you and you decide.</p>
           </li>
         </ol>
+
+        <div class="estimate" id="estimate">
+          <div class="estimate-intro">
+            <h3>Start your estimate</h3>
+            <p>Fill in three things and we'll write the text for you. It opens in your messages, ready to send.</p>
+            <p class="estimate-tip">Easiest: text a photo of the sticker in your driver's door jamb (VIN) and your dashboard (mileage).</p>
+            <p class="estimate-private">Nothing you type here is saved or sent anywhere. It only fills in your text.</p>
+          </div>
+          <p id="estimate-fallback">Text <a class="js-text" href="sms:+19316741516">931-674-1516</a> with the year, make and model, what's going on, and your town.</p>
+          <div id="estimate-builder" hidden>
+            <form id="estimate-form" novalidate>
+              <label for="f-ymm">Year, make and model <span class="req">(required)</span></label>
+              <input id="f-ymm" name="ymm" type="text" autocomplete="off" placeholder="2012 Honda Odyssey" required>
+
+              <label for="f-problem">What's going on? <span class="req">(required)</span></label>
+              <textarea id="f-problem" name="problem" rows="3" placeholder="Grinding noise when I brake" required></textarea>
+
+              <label for="f-town">Your town <span class="req">(required)</span></label>
+              <input id="f-town" name="town" type="text" list="towns" autocomplete="address-level2" placeholder="Spring Hill" required>
+              <datalist id="towns">
+                <option value="Spring Hill"><option value="Thompson's Station"><option value="Columbia"><option value="Franklin">
+              </datalist>
+
+              <details class="estimate-more">
+                <summary>Add your details now (optional)</summary>
+                <p class="estimate-note">We use these only for your estimate and invoice, never shared.</p>
+                <label for="f-name">Full name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name">
+                <label for="f-address">Address where the car is parked</label>
+                <input id="f-address" name="address" type="text" autocomplete="street-address">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email">
+                <div class="estimate-pair">
+                  <div>
+                    <label for="f-vin">VIN</label>
+                    <input id="f-vin" name="vin" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false">
+                  </div>
+                  <div>
+                    <label for="f-miles">Mileage</label>
+                    <input id="f-miles" name="miles" type="text" inputmode="numeric" autocomplete="off">
+                  </div>
+                </div>
+              </details>
+
+              <div class="estimate-actions">
+                <a class="btn" id="estimate-send" href="sms:+19316741516">Open in my texts</a>
+                <button class="btn btn-quiet" id="estimate-copy" type="button">Copy the message</button>
+              </div>
+              <p class="estimate-status" id="estimate-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -206,7 +259,7 @@
         <div class="work-grid">
           <figure class="photo">
             <img src="assets/photos/brake-job.webp" alt="New rotor and brake pads installed on a front wheel hub" width="653" height="868" loading="lazy">
-            <figcaption>New pads and rotors, done in the owner's driveway.</figcaption>
+            <figcaption>New pads and rotors, done in a customer's driveway.</figcaption>
           </figure>
           <figure class="photo">
             <img src="assets/photos/starter-old-new.webp" alt="A new starter next to the worn original" width="653" height="868" loading="lazy">
@@ -221,7 +274,7 @@
       <div class="wrap faq-inner">
         <div class="faq-side">
           <h2 id="questions-title">Questions people ask us</h2>
-          <p>Don't see yours? <a class="js-text" href="sms:+19316741516">Text us</a> and we'll answer.</p>
+          <p>Don't see yours? <a class="js-text" href="sms:+19316741516" data-body="Question: \n">Text us</a> and we'll answer.</p>
         </div>
         <div class="faq-list">
           <details>
@@ -242,7 +295,11 @@
           </details>
           <details>
             <summary>Where can you work on my car?</summary>
-            <p>Most driveways work fine. Some apartment complexes and HOAs don't allow car repairs, so check your rules first. If you're not sure, text us and we'll figure it out together.</p>
+            <p>Most driveways work fine. We need a flat, paved spot with room to work around the car. Some apartment complexes and HOAs don't allow car repairs, so check your rules first. If you're not sure, text us and we'll figure it out together.</p>
+          </details>
+          <details>
+            <summary>What if the weather's bad?</summary>
+            <p>All of our work is weather permitting, since we're working outside. If rain or storms move in, we'll text you and set a new time.</p>
           </details>
           <details>
             <summary>Do you come to my town?</summary>
@@ -261,7 +318,7 @@
         <div>
           <h2 id="reviews-title">What local families say</h2>
           <blockquote class="quote">
-            <p>"Ed and Zach were awesome! Very responsive and got me in right away for a much needed repair. Their prices are reasonable and they did great work!"</p>
+            <p>"Ed and Zach were awesome! … they did great work!"</p>
             <footer>Facebook review</footer>
           </blockquote>
         </div>
@@ -288,9 +345,11 @@
           <p>Text is the fastest way to reach us. Include the year, make and model and what's going on.</p>
         </div>
         <ul class="contact-list">
-          <li><a class="btn btn-light" href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a></li>
-          <li><a class="btn btn-outline-light" href="tel:+19316741516">Call 931-674-1516</a></li>
-          <li><a class="contact-email" href="mailto:info@MiddleTNAutoRepair.com">info@MiddleTNAutoRepair.com</a></li>
+          <li><a class="btn btn-light js-text" href="sms:+19316741516?&amp;body=Year%2Fmake%2Fmodel%3A%20%0AWhat's%20going%20on%3A%20%0ATown%3A%20%0A(from%20website)">Text 931-674-1516</a></li>
+          <li><a class="btn btn-outline-light" href="https://m.me/MiddleTNAutoRepair">Message us on Facebook</a></li>
+          <li><a class="contact-link" href="tel:+19316741516">Or call 931-674-1516</a></li>
+          <li><a class="contact-link" href="mtnar.vcf">Save our number to your contacts</a></li>
+          <li><a class="contact-link" href="mailto:info@MiddleTNAutoRepair.com">info@MiddleTNAutoRepair.com</a></li>
           <li class="area">Serving Spring Hill, Thompson's Station, Columbia and Franklin. By appointment only.</li>
         </ul>
       </div>
@@ -299,11 +358,16 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>© <span id="year">2026</span> Middle TN Auto Repair LLC</p>
-      <p><a href="https://www.facebook.com/MiddleTNAutoRepair">Facebook</a></p>
+      <nav class="footer-services" aria-label="Services">
+        <a href="brake-repair/">Brake repair</a>
+        <a href="starter-alternator-battery/">Starters, alternators &amp; batteries</a>
+        <a href="spark-plugs-check-engine/">Spark plugs &amp; check engine lights</a>
+        <a href="cooling-suspension/">Cooling &amp; suspension</a>
+      </nav>
+      <p>© <span id="year">2026</span> Middle TN Auto Repair LLC · <a href="https://www.facebook.com/MiddleTNAutoRepair">Facebook</a> · <a href="mtnar.vcf">Save our number</a></p>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
