@@ -15,7 +15,7 @@
 <body>
   <main class="wrap policy">
     <h1>Bizline Privacy Policy</h1>
-    <p class="updated">Last updated October 22, 2026</p>
+    <p class="updated">Last updated October 23, 2026</p>
 <p>Bizline is an app for texting from your VoIP.ms numbers. It is not made by VoIP.ms and is not affiliated with or endorsed by VoIP.ms.</p>
 <h2>What the App Keeps on Your Phone</h2>
 <ul>
@@ -30,7 +30,8 @@
 <ul>
 <li><strong>Only to VoIP.ms</strong> (voip.ms): your email and API password with each request, to read your numbers and messages and to send the texts and pictures you send. Pictures are downloaded only from VoIP.ms.</li>
 <li><strong>Instant Alerts</strong> (only if you turn them on): your phone's push address from Google (Firebase Cloud Messaging) and a random code go to Bizline's alert service (bizline-push.edhensel3.workers.dev, run on Cloudflare), which keeps them until you turn Instant Alerts off. Each texting number's <strong>SMS URL Callback</strong> in VoIP.ms is set to that service's address with the code; when a text arrives, VoIP.ms sends it only the number that got the text, and the service sends your phone a push through Google saying a text arrived. The service never receives, keeps or logs the text, who sent it, your password or your contacts. Turning Instant Alerts off or signing out puts each number's callback back and deletes the code and push address from the service. The app keeps the code, your numbers' earlier callback addresses and which numbers it changed in its settings.</li>
-<li><strong>Nothing to us, to Anthropic, or to anyone else</strong>, except feedback you send yourself (below) and Instant Alerts if you turn them on (above). The app has no ads, no analytics and no tracking.</li>
+<li><strong>Crash reports</strong> (on unless you turn off <strong>Settings → Phone &amp; Data → Privacy → Send Crash Reports</strong>): when the app crashes, Google's Firebase Crashlytics receives the kind of error and where in the app's code it happened, with the app version, phone model, Android version and a random install code Crashlytics makes. Never the error's own words, your messages, phone numbers, contacts, voicemails, call records, email or passwords. Google keeps crash reports for 90 days. Turned off, nothing is sent.</li>
+<li><strong>Nothing to us, to Anthropic, or to anyone else</strong>, except feedback you send yourself (below), crash reports (above) and Instant Alerts if you turn them on (above). The app has no ads, no analytics and no tracking.</li>
 <li><strong>Feedback you send</strong> (<strong>Settings → Send Feedback</strong>) goes to the Bizline team's Google Form (docs.google.com), only when you tap <strong>Send</strong>: what it's about, the part of the app, your message, your email if you give it, and, with <strong>Include App and Phone Details</strong> ticked, the app version, phone model, Android version, whether calling is set up and how many numbers you have. The page lists them before you send. Nothing else goes: no phone numbers, contacts, messages, voicemails, call records or passwords. A message not sent yet is kept in the app's settings until it's sent or you clear it.</li>
 <li>A <strong>web link</strong> you tap in a message opens in your phone's browser or the app that owns it.</li>
 <li>An <strong>export file</strong> goes only where you save it, with a password if you chose one.</li>
